@@ -1,1 +1,1 @@
-# Sudoku
+O projeto tem como base arrays aninhados. Cada entrada do usuário é armazenada em um índice específico. Dessa forma, após o completo preenchimento, o usuário deverá clicar em "validar Preenchimento". A validação é feita em 3 passos: horizontalmente, verticalmente e por subgrupo.

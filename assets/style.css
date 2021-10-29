@@ -105,8 +105,8 @@ button:hover{
     font-family:Arial, Helvetica, sans-serif;
 }
 .parabens{
-    width: 400px;
-    height: 70px;
+    width: 450px;
+    height: 80px;
     border-radius: 20px;
     background-color: rgba(65, 105, 225, 0.822);
     color: blanchedalmond;
@@ -122,7 +122,7 @@ button:hover{
 
 .errrrou{
     width: 400px;
-    height: 70px;
+    height: 75px;
     border-radius: 20px;
     background-color: rgba(65, 105, 225, 0.822);
     color: blanchedalmond;

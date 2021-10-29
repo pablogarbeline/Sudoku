@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tela-jogo">
+        <h1>Sudoku</h1>
+        <div class="container">
+            <div class="blocos bloco1">
+                <div class="sub-blocos" id="sb00"></div>
+                <div class="sub-blocos" id="sb01"></div>
+                <div class="sub-blocos" id="sb02"></div>
+                <div class="sub-blocos fixo" id="sb10"><p>7</p></div>
+                <div class="sub-blocos fixo" id="sb11"><p>8</p></div>
+                <div class="sub-blocos fixo" id="sb12"><p>9</p></div>
+                <div class="sub-blocos" id="sb20"></div>
+                <div class="sub-blocos" id="sb21"></div>
+                <div class="sub-blocos" id="sb22"></div>
+                
+            </div>
+            <div class="blocos bloco2">
+                <div class="sub-blocos fixo" id="sb03"><p>8</p></div>
+                <div class="sub-blocos" id="sb04"></div>
+                <div class="sub-blocos" id="sb05"></div>
+                <div class="sub-blocos" id="sb13"></div>
+                <div class="sub-blocos fixo" id="sb14"><p>1</p></div>
+                <div class="sub-blocos" id="sb15"></div>
+                <div class="sub-blocos" id="sb23"></div>
+                <div class="sub-blocos" id="sb24"></div>
+                <div class="sub-blocos fixo" id="sb25"><p>6</p></div>
+            </div>
+            <div class="blocos bloco3">
+                <div class="sub-blocos" id="sb06"></div>
+                <div class="sub-blocos" id="sb07"></div>
+                <div class="sub-blocos" id="sb08"></div>
+                <div class="sub-blocos" id="sb16"></div>
+                <div class="sub-blocos" id="sb17"></div>
+                <div class="sub-blocos fixo" id="sb18"><p>6</p></div>
+                <div class="sub-blocos fixo" id="sb26"><p>1</p></div>
+                <div class="sub-blocos" id="sb27"></div>
+                <div class="sub-blocos" id="sb28"></div>
+            </div>
+            <div class="blocos bloco4">
+                <div class="sub-blocos" id="sb30"></div>
+                <div class="sub-blocos" id="sb31"></div>
+                <div class="sub-blocos fixo" id="sb32"><p>7</p></div>
+                <div class="sub-blocos fixo" id="sb40"><p>5</p></div>
+                <div class="sub-blocos" id="sb41"></div>
+                <div class="sub-blocos fixo" id="sb42"><p>8</p></div>
+                <div class="sub-blocos" id="sb50"></div>
+                <div class="sub-blocos fixo" id="sb51"><p>4</p></div>
+                <div class="sub-blocos" id="sb52"></div>
+            </div>
+            <div class="blocos bloco5">
+                <div class="sub-blocos" id="sb33"></div>
+                <div class="sub-blocos" id="sb34"></div>
+                <div class="sub-blocos" id="sb35"></div>
+                <div class="sub-blocos fixo" id="sb43"><p>7</p></div>
+                <div class="sub-blocos" id="sb44"></div>
+                <div class="sub-blocos fixo" id="sb45"><p>9</p></div>
+                <div class="sub-blocos" id="sb53"></div>
+                <div class="sub-blocos" id="sb54"></div>
+                <div class="sub-blocos" id="sb55"></div>
+            </div>
+            <div class="blocos bloco6">
+                <div class="sub-blocos" id="sb36"></div>
+                <div class="sub-blocos fixo" id="sb37"><p>5</p></div>
+                <div class="sub-blocos" id="sb38"></div>
+                <div class="sub-blocos fixo" id="sb46"><p>3</p></div>
+                <div class="sub-blocos" id="sb47"></div>
+                <div class="sub-blocos fixo" id="sb48"><p>4</p></div>
+                <div class="sub-blocos fixo" id="sb56"><p>2</p></div>
+                <div class="sub-blocos" id="sb57"></div>
+                <div class="sub-blocos" id="sb58"></div>
+            </div>
+            <div class="blocos bloco7">
+                <div class="sub-blocos" id="sb60"></div>
+                <div class="sub-blocos" id="sb61"></div>
+                <div class="sub-blocos fixo" id="sb62"><p>3</p></div>
+                <div class="sub-blocos fixo" id="sb70"><p>8</p></div>
+                <div class="sub-blocos" id="sb71"></div>
+                <div class="sub-blocos" id="sb72"></div>
+                <div class="sub-blocos" id="sb80"></div>
+                <div class="sub-blocos" id="sb81"></div>
+                <div class="sub-blocos" id="sb82"></div>
+            </div>
+            <div class="blocos bloco8">
+                <div class="sub-blocos fixo" id="sb63"><p>2</p></div>
+                <div class="sub-blocos" id="sb64"></div>
+                <div class="sub-blocos" id="sb65"></div>
+                <div class="sub-blocos" id="sb73"></div>
+                <div class="sub-blocos fixo" id="sb74"><p>7</p></div>
+                <div class="sub-blocos" id="sb75"></div>
+                <div class="sub-blocos" id="sb83"></div>
+                <div class="sub-blocos" id="sb84"></div>
+                <div class="sub-blocos fixo" id="sb85"><p>1</p></div>
+            </div>
+            <div class="blocos bloco9">
+                <div class="sub-blocos" id="sb66"></div>
+                <div class="sub-blocos" id="sb67"></div>
+                <div class="sub-blocos" id="sb68"></div>
+                <div class="sub-blocos fixo" id="sb76"><p>4</p></div>
+                <div class="sub-blocos fixo" id="sb77"><p>3</p></div>
+                <div class="sub-blocos fixo" id="sb78"><p>9</p></div>
+                <div class="sub-blocos" id="sb86"></div>
+                <div class="sub-blocos" id="sb87"></div>
+                <div class="sub-blocos" id="sb88"></div>
+            </div>
+        </div>
+
+        <button>Validar Preenchimento</button>
+        <button>Reset</button>
+    </div>
+
+    <div class="invalidInput">
+        <p>Entrada Inválida!</p>
+    </div>
+
+    <div class="parabens">
+        <p>Parabéns pequeno(a) Padawan, você é pika das galáxias!</p>
+    </div>
+
+    <div class="errrrou">
+        <p>Poxa migo(a), errrrrou! Prestenção no paranauê.</p>
+    </div>
+    
+    
+    <script src="./script-dificil.js"></script>
+</body>
+</html>
